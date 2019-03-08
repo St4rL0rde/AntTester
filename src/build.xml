@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+   	<project name="AntTester" default="all">
+   	<target name="info">
+     	<echo>Hello World - Welcome to Apache Ant!</echo>
+   	</target>
+   	<target name="ant-folder">
+   		<delete dir="${basedir}/testdir"/>
+   	</target>
+   	<fail>
+   		<condition>
+   			<!--not -->
+   				<isset property="notexistent"/>
+   			<!--/not-->
+   		</condition>
+   	</fail>
+	</project>
